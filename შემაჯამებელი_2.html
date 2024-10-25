@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>შემაჯამებელი წერა #2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+  <style> 
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question div {
+    display: flex;
+    gap: 10px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.images {
+  width: 100px;
+}
+.question {
+  margin-bottom: 40px;
+}
+.question div {
+  margin-bottom: 30px;
+}
+  </style>
+<body>
+    <header>
+        <h1>შემაჯამებელი წერა #2</h1>
+    </header>
+    <main>
+        <form id="quizForm">
+            <!-- Questions will go here -->
+            <!-- Question 1 -->
+          <div class="question" id="question1"> <strong> (1) 1. </strong> <br> უდიდესი წილადი, რომლის მნიშვნელია \(20\) და რომელიც მოთავსებულია \(0,7\)-სა და \(0,9\)-ს შორის, არის
+    
+    <div>  </div>
+  <div>
+        <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">\( \frac{15}{20} \)
+</label><br>
+        <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">\( \frac{17}{20} \)
+</label><br>
+        <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">\( \frac{18}{20} \)
+</label><br>
+        <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">\( \frac{16}{20} \)
+</label>
+    </div>
+</div>
+
+<!-- Question 2 -->
+<div class="question" id="question2">
+  <strong> (1) 2. </strong> <br> 
+  თუ \(p\) და \(q\) მარტივი რიცხვებია, მაშინ \(p-q\) არ შეიძლება იყოს: 
+  <div>  </div>
+    <div>
+        <input type="radio" name="q2" value="a" id="q2a"><label for="q2a"> \(-4\) </label><br>
+        <input type="radio" name="q2" value="b" id="q2b"><label for="q2b"> \(0\) </label><br>
+        <input type="radio" name="q2" value="c" id="q2c"><label for="q2c"> \(2\) </label><br>
+        <input type="radio" name="q2" value="d" id="q2d"><label for="q2d"> \(7\) </label>
+    </div>
+</div>
+
+<!-- Question 3 -->
+<div class="question" id="question3">
+    <strong> (1) 3. </strong> <br>
+  \( \frac{5x-y}{6x+4y} \) , თუ \( 2x=3y\)
+     <div>  </div>
+    <div>
+        <input type="radio" name="q3" value="a" id="q3a"><label for="q3a"> \(2\)</label><br>
+        <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">\(0.5\)</label><br>
+        <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">\(0.25\)</label><br>
+        <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">\(3.25\)</label>
+    </div>
+</div>
+
+<!-- Question 4 -->
+<div class="question" id="question4">
+    <strong> (1) 4. </strong> <br>
+  ცნობილია, რომ \( 8a^{3} =5b^{2}\)  \( (a>0, b>0) \).  რამდენჯერ გაიზრდება \(a\)  თუ \(b\) -ს გავზრდით \( 2\sqrt{2} \)-ჯერ?
+    <div>
+        <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">\( 8\)</label><br>
+        <input type="radio" name="q4" value="b" id="q4b"><label for="q4b">\( 2\)</label><br>
+        <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">\( 40\)</label><br>
+        <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">\( \sqrt{2} \)</label>
+    </div>
+</div>
+
+<!-- Question 5 -->
+<div class="question" id="question5">
+    <img src="question5.jpg" alt="Question 5">
+    <div>
+        <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Choice A</label><br>
+        <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">Choice B</label><br>
+        <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Choice C</label><br>
+        <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 6 -->
+<div class="question" id="question6">
+    <img src="question6.jpg" alt="Question 6">
+    <div>
+        <input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Choice A</label><br>
+        <input type="radio" name="q6" value="b" id="q6b"><label for="q6b">Choice B</label><br>
+        <input type="radio" name="q6" value="c" id="q6c"><label for="q6c">Choice C</label><br>
+        <input type="radio" name="q6" value="d" id="q6d"><label for="q6d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 7 -->
+<div class="question" id="question7">
+    <img src="question7.jpg" alt="Question 7">
+    <div>
+        <input type="radio" name="q7" value="a" id="q7a"><label for="q7a">Choice A</label><br>
+        <input type="radio" name="q7" value="b" id="q7b"><label for="q7b">Choice B</label><br>
+        <input type="radio" name="q7" value="c" id="q7c"><label for="q7c">Choice C</label><br>
+        <input type="radio" name="q7" value="d" id="q7d"><label for="q7d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 8 -->
+<div class="question" id="question8">
+    <img src="question8.jpg" alt="Question 8">
+    <div>
+        <input type="radio" name="q8" value="a" id="q8a"><label for="q8a">Choice A</label><br>
+        <input type="radio" name="q8" value="b" id="q8b"><label for="q8b">Choice B</label><br>
+        <input type="radio" name="q8" value="c" id="q8c"><label for="q8c">Choice C</label><br>
+        <input type="radio" name="q8" value="d" id="q8d"><label for="q8d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 9 -->
+<div class="question" id="question9">
+    <img src="question9.jpg" alt="Question 9">
+    <div>
+        <input type="radio" name="q9" value="a" id="q9a"><label for="q9a">Choice A</label><br>
+        <input type="radio" name="q9" value="b" id="q9b"><label for="q9b">Choice B</label><br>
+        <input type="radio" name="q9" value="c" id="q9c"><label for="q9c">Choice C</label><br>
+        <input type="radio" name="q9" value="d" id="q9d"><label for="q9d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 10 -->
+<div class="question" id="question10">
+    <img src="question10.jpg" alt="Question 10">
+    <div>
+        <input type="radio" name="q10" value="a" id="q10a"><label for="q10a">Choice A</label><br>
+        <input type="radio" name="q10" value="b" id="q10b"><label for="q10b">Choice B</label><br>
+        <input type="radio" name="q10" value="c" id="q10c"><label for="q10c">Choice C</label><br>
+        <input type="radio" name="q10" value="d" id="q10d"><label for="q10d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 11 -->
+<div class="question" id="question11">
+    <img src="question11.jpg" alt="Question 11">
+    <div>
+        <input type="radio" name="q11" value="a" id="q11a"><label for="q11a">Choice A</label><br>
+        <input type="radio" name="q11" value="b" id="q11b"><label for="q11b">Choice B</label><br>
+        <input type="radio" name="q11" value="c" id="q11c"><label for="q11c">Choice C</label><br>
+        <input type="radio" name="q11" value="d" id="q11d"><label for="q11d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 12 -->
+<div class="question" id="question12">
+    <img src="question12.jpg" alt="Question 12">
+    <div>
+        <input type="radio" name="q12" value="a" id="q12a"><label for="q12a">Choice A</label><br>
+        <input type="radio" name="q12" value="b" id="q12b"><label for="q12b">Choice B</label><br>
+        <input type="radio" name="q12" value="c" id="q12c"><label for="q12c">Choice C</label><br>
+        <input type="radio" name="q12" value="d" id="q12d"><label for="q12d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 13 -->
+<div class="question" id="question13">
+    <img src="question13.jpg" alt="Question 13">
+    <div>
+        <input type="radio" name="q13" value="a" id="q13a"><label for="q13a">Choice A</label><br>
+        <input type="radio" name="q13" value="b" id="q13b"><label for="q13b">Choice B</label><br>
+        <input type="radio" name="q13" value="c" id="q13c"><label for="q13c">Choice C</label><br>
+        <input type="radio" name="q13" value="d" id="q13d"><label for="q13d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 14 -->
+<div class="question" id="question14">
+    <img src="question14.jpg" alt="Question 14">
+    <div>
+        <input type="radio" name="q14" value="a" id="q14a"><label for="q14a">Choice A</label><br>
+        <input type="radio" name="q14" value="b" id="q14b"><label for="q14b">Choice B</label><br>
+        <input type="radio" name="q14" value="c" id="q14c"><label for="q14c">Choice C</label><br>
+        <input type="radio" name="q14" value="d" id="q14d"><label for="q14d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 15 -->
+<div class="question" id="question15">
+    <img src="question15.jpg" alt="Question 15">
+    <div>
+        <input type="radio" name="q15" value="a" id="q15a"><label for="q15a">Choice A</label><br>
+        <input type="radio" name="q15" value="b" id="q15b"><label for="q15b">Choice B</label><br>
+        <input type="radio" name="q15" value="c" id="q15c"><label for="q15c">Choice C</label><br>
+        <input type="radio" name="q15" value="d" id="q15d"><label for="q15d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 16 -->
+<div class="question" id="question16">
+    <img src="question16.jpg" alt="Question 16">
+    <div>
+        <input type="radio" name="q16" value="a" id="q16a"><label for="q16a">Choice A</label><br>
+        <input type="radio" name="q16" value="b" id="q16b"><label for="q16b">Choice B</label><br>
+        <input type="radio" name="q16" value="c" id="q16c"><label for="q16c">Choice C</label><br>
+        <input type="radio" name="q16" value="d" id="q16d"><label for="q16d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 17 -->
+<div class="question" id="question17">
+    <img src="question17.jpg" alt="Question 17">
+    <div>
+        <input type="radio" name="q17" value="a" id="q17a"><label for="q17a">Choice A</label><br>
+        <input type="radio" name="q17" value="b" id="q17b"><label for="q17b">Choice B</label><br>
+        <input type="radio" name="q17" value="c" id="q17c"><label for="q17c">Choice C</label><br>
+        <input type="radio" name="q17" value="d" id="q17d"><label for="q17d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 18 -->
+<div class="question" id="question18">
+    <img src="question18.jpg" alt="Question 18">
+    <div>
+        <input type="radio" name="q18" value="a" id="q18a"><label for="q18a">Choice A</label><br>
+        <input type="radio" name="q18" value="b" id="q18b"><label for="q18b">Choice B</label><br>
+        <input type="radio" name="q18" value="c" id="q18c"><label for="q18c">Choice C</label><br>
+        <input type="radio" name="q18" value="d" id="q18d"><label for="q18d">Choice D</label>
+    </div>
+</div>
+
+<!-- Question 19 -->
+<div class="question" id="question19">
+    <img src="question19.jpg" alt="Question 19">
+    <div>
+        <input type="radio" name="q19" value="a" id="q19a"><label for="q19a">Choice A</label><br>
+        <input type="radio" name="q19" value="b" id="q19b"><label for="q19b">Choice B</label><br>
+        <input type="radio" name="q19" value="c" id="q19c"><label for="q19c">Choice C</label><br>
+        <input type="radio" name="q19" value="d" id="q19d"><label for="q19d">Choice D</label>
+    </div>
+</div>
+<!-- Question 20 -->
+<div class="question" id="question20">
+    <img src="question20.jpg" alt="Question 20">
+    <div>
+        <input type="radio" name="q20" value="a" id="q20a"><label for="q20a">Choice A</label><br>
+        <input type="radio" name="q20" value="b" id="q20b"><label for="q20b">Choice B</label><br>
+        <input type="radio" name="q20" value="c" id="q20c"><label for="q20c">Choice C</label><br>
+        <input type="radio" name="q20" value="d" id="q20d"><label for="q20d">Choice D</label>
+    </div>
+</div>
+
+            
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mathematics Olympiad</p>
+    </footer>
+     <script>
+            const correctAnswers = {
+    q1: "b",
+    q2: "a",
+    q3: "d",
+    q4: "c",
+    q5: "c",
+    q6: "c",
+    q7: "c",
+    q8: "c",
+    q9: "c",
+    q10: "c",
+    q11: "c",
+    q12: "c",
+    q13: "c",
+    q14: "c",
+    q15: "c",
+    q16: "c",
+    q17: "c",
+    q18: "c",
+    q19: "c",
+    q20: "c",
+  
+    // Add all correct answers here for q1 to q20
+};
+
+function submitQuiz() {
+    let score = 0;
+    for (let i = 1; i <= 20; i++) {
+        const question = document.querySelector(`input[name="q${i}"]:checked`);
+        if (question && question.value === correctAnswers[`q${i}`]) {
+            score++;
+        }
+    }
+    document.getElementById('result').innerText = `Your score is ${score} out of 20.`;
+}
+</script>
+</body>
+</html>
